@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h6 {
+    color: olive;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+    background-color: beige;
+
+padding: 25px;
+
+margin: 23px;
+
+width: 100%;
+
+text-align: center;
+}
+
+.hem {
+    padding: 75px;
+    margin: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: olive;
+    transform: scaleZ(110%);
+}
+
+a:hover {
+    transform: scaleZ(110%);
+}
+
+
+p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    background-color: rgb(2, 1, 1);
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    
+}
+ul {
+    list-style: none;
+    width: 100%;
+}
+nav {
+    background-color: rgb(48, 47, 47);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand {
+    width: 105px;
+    height: auto;
+    margin: -14px;
+}
+
+.brand2 {
+    width: 103px;
+height: auto;
+
+padding: 22px;
+
+}
+
+.toggle-menu {
+    display: flex;
+    color: olive;
+    font-size: 2rem;
+    background-color: rgb(48, 47, 47);
+}
+
+.show {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    
+
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 2em;
+    color: olive;
+    justify-content: space-evenly;
+    
+}
+
+.navigation a:hover {
+    transform: scale(110%);
+
+}
+
+.container-1 {
+    display: grid;
+    background-color: rgba(197, 188, 176, 0.806);
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+grid-template-rows: 1fr 1fr 1fr 1fr;
+
+grid-template-areas: 
+"y y . ." 
+"y y x x" 
+". . x x"
+". . . .";
+}
+
+.medlem {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    grid-area: y;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.medlemskap {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(48, 47, 47);
+    border: 2px rgb(121, 121, 71);
+    padding: 31px;
+    margin: 22px;
+
+} 
+
+input {
+    background-color: white;
+    border: olive;
+    color: olive;
+    padding: 2px;
+    margin: 3px;
+}
+label {
+    font-size: 16;
+    color: olive;
+}
+
+.medlemB {
+    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    grid-area: x;
+    color: white;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.medlemB img {
+    max-width: 63%;
+    padding: 5px;
+}
+
+.grid-hem {
+    display: flex;
+    grid-area: w;
+    flex-wrap: wrap;
+    background-color: beige;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.container-hem2 {
+    display: flex;
+    grid-area: e;
+    flex-wrap: wrap;
+    background-color: rgba(197, 188, 176, 0.806);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: rgb(2, 1, 1)
+}
+
+.container-hem {
+    display: grid;
+    background-image: url(/projekt/images/thumbnail_Image\ \(4\).jpg);
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+grid-template-rows: 1fr ;
+
+grid-template-areas: 
+"w w e e" 
+;
+}
+
+.container-2 {
+    display: grid;
+    height: 100vh;
+
+}
+
+.container-3 {
+    display: grid;
+    height: 100vh;
+
+}
+
+
+/* footer */
+.site-footer {
+    background-color: rgb(48, 47, 47);
+    width: 100%;
+    justify-content: space-around;
+    display: grid;
+    padding: 60px 0;
+    height: 50vh;
+    padding: 10px;
+    color: olive;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "q w e y u"
+    "t . . . .";
+}
+
+.container {
+    display: grid;
+}
+.logo {
+    display: flex;
+    grid-area: q;
+    width: 40%;
+    height: auto;
+
+}
+.footer-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: q;
+    flex-wrap: wrap;
+    padding: 15px 20px 10px;
+}
+ .kontakt {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     grid-area: y;
+     flex-wrap: wrap;
+     padding: 15px 20px 10px;
+ } 
+.footer-2 {
+    display: flex;
+    grid-area: w;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 15px 20px 10px;
+}
+.footer-3 {
+    display: flex;
+    grid-area: w;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 15px 20px 10px;
+}
+
+.footer-4 {
+    display: flex;
+    grid-area: e;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 15px 20px 10px;
+}
+
+.sotenas {
+    display: flex;
+    grid-area: t;
+    align-items: end;
+}
+
+.fa-facebook {
+    color: #3b5999;
+    font-size: 25px;
+}
+.fa-instagram {
+    color: #e4405f;
+    font-size: 25px;
+}
+
+
+.site-footer a:hover {
+    transform: scale(110%);
+}
+
+.site-footer a {
+    color: white;
+}
+/* om oss */
+.om-oss {
+    display: grid;
+}
+.container-om {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.oss-container .om-oss2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        grid-auto-rows: auto;
+        justify-items: start;
+        padding: 10px;
+    
+}
+.om-oss2 .person {
+    
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    
+}
+
+.historia {
+    background-color: beige;
+    height: auto;
+    text-align: center
+}
+
+.gap {
+    height: 10vh;
+    text-align: center;
+}
+
+/* Kalender */
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: beige;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: olive;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: rgb(207, 207, 179);
+  color: olive !important
+}
+
+
+
+
+
+
+
+
+
